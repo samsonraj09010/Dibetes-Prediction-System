@@ -1,0 +1,133 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF=8">
+	<title> Prediction page</title>
+	<style>
+		td {
+			font-size: 17px;
+		}
+
+		body {
+			background-color: black;
+			background-image: url(https://media.istockphoto.com/id/1098159260/vector/gambling-background.jpg?s=612x612&w=0&k=20&c=DpOn6VbOIEW_yMYni8ojxTxihLP34fduWEAeyACxmEM=);
+			background-size: cover;
+			background-repeat: no-repeat;
+
+		}
+
+		.main {
+
+			top: 80px;
+			left: 110px;
+			width: 550px;
+			margin-left: 7%;
+			background-color: white;
+			border-radius: 15px;
+			height: 110vh;
+			align-items: center;
+
+		}
+
+		.main:hover {
+			box-shadow: 50px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+		}
+
+		h1 {
+			font-family: Times New Roman;
+			margin: 20px, 0;
+			color: #F6465B;
+			font-size: 30px;
+			font-weight: bold;
+			animation-delay: 3.5s;
+		}
+
+		input[type=submit] {
+			background-color: #e82e53;
+			border: 2px;
+			color: white;
+			font-size: 15px;
+			font-weight: bold;
+			padding: 10px 16px;
+			cursor: pointer;
+			margin-top: 15px;
+			border-radius: 10px;
+		}
+
+		input {
+			padding: 20px, 0;
+			margin: 20px, 0;
+		}
+
+		p {
+			color: #ffffff;
+		}
+
+		.row em {
+			color: #BF0A30;
+
+		}
+
+		.gfg {
+			color: #1c0080;
+			font-size: 30px;
+		}
+	</style>
+</head>
+
+<body>
+<center>
+	<p><em>WELCOME TO THE PREDICT PAGE</em></P>
+    </center>
+    <center>
+	<div align='center' class="main"> 
+        <h1 class="gfg">Here We Go </h1> 
+        <h1> Please Enter The Values To Predict The OutCome</h1> <br /> 
+        <form action="result"> 
+            <table> 
+				<tr>
+					<td align="right"> <strong>Pregnancies:</strong> </td>
+					<td align="left"><input type="text" name="n1"></td>
+				</tr>
+				<tr>
+					<td align="right"> <strong>Glucose:</strong> </td>
+					<td align="left"><input type="text" name="n2"></td>
+				</tr>
+				<tr>
+					<td align="right"> <strong>Blood Pressure:</strong> </td>
+					<td align="left"><input type="text" name="n3"></td>
+				</tr>
+				<tr>
+					<td align="right"> <strong>Skin Thickness:</strong> </td>
+					<td align="left"><input type="text" name="n4"></td>
+				</tr>
+				<tr>
+					<td align="right"> <strong>Insulin:</strong> </td>
+					<td align="left"><input type="text" name="n5"></td>
+				</tr>
+				<tr>
+					<td align="right"> <strong>BMI:</strong> </td>
+					<td align="left"><input type="text" name="n6"></td>
+				</tr>
+				<tr>
+					<td align="right"><strong>Diabetes Pedigree Function:</strong> </td>
+					<td align="left"><input type="text" name="n7"></td>
+				</tr>
+				<tr>
+					<td align="right"> <strong>Age:</strong> </td>
+					<td align="left"><input type="text" name="n8"></td>
+				</tr>
+			</table>
+			<input type="submit" value="PREDICT">
+            
+		</form>
+		<div class="row">
+			<h2><em>{{result2}}</em></h2>
+		</div>
+	</div>
+</body>
+</center>
+</html>
